@@ -18,7 +18,7 @@
 
 .promo-block {
     &:before {
-        background: url(/images/promo-background.svg) no-repeat;
+        background: url(/sweethome-timesheets/images/promo-background.svg) no-repeat;
         background-size: 100%;
         content: '';
         position: absolute;
@@ -52,15 +52,13 @@
 .heart {
     .customer-block__heart {
         position: absolute;
-        top: 25%;
-        right: 0;
+        top: 171%;
         z-index: 0;
+        right: 0;
         @media (max-width: 414px) {
             overflow: hidden;
             width: 140px;
             height: 400px;
-            top: 22%;
-            right: 0;
         }
     }
 }

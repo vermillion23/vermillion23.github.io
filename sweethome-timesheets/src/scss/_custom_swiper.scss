@@ -1,5 +1,5 @@
 // @import "swiper";
-// @import '/node_modules/swiper/css/swiper.css';
+@import '/sweethome-timesheets/node_modules/swiper/css/swiper.css';
 // swiper/swiper-bundle.css';
 .swiper-block {
     display: none;
@@ -21,7 +21,7 @@
 // height: 450px;
 // }
 .swiper-container {
-    background: url('/images/swiper-background.svg') no-repeat 0 0;
+    background: url('/sweethome-timesheets/images/swiper-background.svg') no-repeat 0 0;
     // background-size: 150% 100%;
     height: 460px;
 }
