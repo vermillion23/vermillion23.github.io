@@ -1,0 +1,322 @@
+/* Styles reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of styles reset */
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto-Regular") format("ttf"), url("../fonts/Roboto-Bold") format("ttf");
+}
+.portfolio__case {
+  max-width: 1380px;
+  margin: 0 auto 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: #000000;
+  text-align: left;
+  background-color: #FFFFFF;
+}
+@media (max-width: 1500px) {
+  .portfolio__case {
+    max-width: 1152px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio__case {
+    max-width: 1152px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.portfolio__case .description-text {
+  margin-top: 5%;
+}
+.portfolio__case .promo-block .promo-block__description {
+  font-weight: bold;
+}
+@media (max-width: 952px) {
+  .portfolio__case .promo-block .promo-block__description {
+    max-width: 100%;
+  }
+}
+.portfolio__case .promo-block .promo-block__screens img,
+.portfolio__case .promo-block .promo-block__logo img {
+  max-width: 100%;
+}
+.portfolio__case .promo-block .promo-block__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio__case .promo-block .promo-block__summary {
+  margin-top: 20%;
+}
+.portfolio__case .promo-block .promo-block__description {
+  margin-top: 10%;
+}
+.portfolio__case .promo-block .promo-block__tags {
+  font-style: italic;
+  margin-top: 5%;
+}
+.portfolio__case .promo-block .promo-block__tags p:nth-child(even) {
+  color: #848484;
+}
+.portfolio__case .promo-block .promo-block__tags p:nth-child(odd) {
+  margin-top: 3%;
+  color: #000000;
+}
+.portfolio__case .promo-block .promo-block__screens {
+  margin-top: 15%;
+}
+@media (max-width: 1024px) {
+  .portfolio__case .promo-block .promo-block__screens {
+    margin-top: 4%;
+  }
+}
+.portfolio__case .case-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7%;
+}
+@media (max-width: 1200px) {
+  .portfolio__case .case-section {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio__case .case-section {
+    flex-direction: column;
+  }
+}
+.portfolio__case .case-col:nth-child(1) {
+  max-width: 30%;
+}
+.portfolio__case .case-col:nth-child(2) {
+  max-width: 60%;
+}
+@media (max-width: 1024px) {
+  .portfolio__case .case-col:nth-child(1) {
+    max-width: 100%;
+  }
+  .portfolio__case .case-col:nth-child(2) {
+    max-width: 100%;
+  }
+}
+.portfolio__case .features-block {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.portfolio__case .features-block .features-block__title {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  color: #404040;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .portfolio__case .features-block .features-block__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+.portfolio__case .features-block .features-block__dashboard_screen img {
+  max-width: 100%;
+}
+.portfolio__case .features-block .features-block__dashboard_screen {
+  max-width: 40%;
+}
+@media (max-width: 1024px) {
+  .portfolio__case .features-block .features-block__dashboard_screen {
+    margin-top: 5%;
+  }
+}
+.portfolio__case .features-block .features-block__list {
+  max-width: 50%;
+}
+@media (max-width: 1024px) {
+  .portfolio__case .features-block {
+    flex-direction: column-reverse;
+  }
+  .portfolio__case .features-block .features-block__dashboard_screen,
+.portfolio__case .features-block .features-block__list {
+    max-width: 100%;
+  }
+}
+.portfolio__case .features-block .features-block__store-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10% auto 5% 3%;
+}
+.portfolio__case .features-block .features-block__store-icons img {
+  max-width: 100%;
+}
+.portfolio__case .features-block .app_store {
+  margin-left: 1%;
+}
+@media (max-width: 1400px) {
+  .portfolio__case .features-block .features-block__store-icons {
+    margin-top: 3%;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio__case .features-block .features-block__store-icons {
+    margin: 5% auto 5%;
+    justify-content: flex-start;
+  }
+}
+.portfolio__case .features-block .desktop-view {
+  display: block;
+}
+@media (max-width: 1024px) {
+  .portfolio__case .features-block .desktop-view {
+    display: none;
+  }
+}
+.portfolio__case .features-block .mobile-view {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .portfolio__case .features-block .mobile-view {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

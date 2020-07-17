@@ -1,0 +1,125 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.section {
+    max-width: 80%;
+}
+
+.case__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* max-width: 1152px; */
+    margin: 5% auto 0 auto;
+}
+
+.case__text,
+.case__images {
+    max-width: 55%;
+}
+
+.case__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #F31414;
+}
+
+.case__subtitle {
+    font-style: italic;
+    color: #000000;
+}
+
+.case__tags {
+    font-style: italic;
+    color: #848484;
+}
+
+.case__text-item {
+    margin-top: 5%;
+}
+
+.case__features {
+    text-transform: uppercase;
+}
+
+.case__description {
+    font-weight: bold;
+}
+
+.case__features-title {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    color: #404040;
+}
+
+.case__images img {
+    max-width: 100%;
+}
+
+.store_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1% auto 5% 3%;
+}
+
+.app_store {
+    margin-left: 1%;
+}
+
+@media(max-width: 1400px) {
+    .case__title {
+        font-size: 4rem;
+    }
+    .case__features-title {
+        font-size: 2rem;
+    }
+    .case__features-item {
+        margin-right: -100%;
+    }
+    .store_icons {
+        margin-top: 3%;
+    }
+}
+
+@media(max-width: 1172px) {
+    .store_icons {
+        margin: 2% auto 5%;
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 897px) {
+    .case__description {
+        margin-right: -100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .case__content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 5% auto 5%;
+    }
+    .case__features-item,
+    .case__description {
+        margin: auto;
+    }
+    .case__text,
+    .case__images {
+        max-width: 100%;
+    }
+    .store_icons {
+        max-width: 100%;
+        justify-content: center;
+        margin: 3% auto;
+    }
+}

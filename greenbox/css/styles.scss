@@ -1,0 +1,169 @@
+@import "styles_reset";
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url("../fonts/Roboto-Regular")format("ttf"), url("../fonts/Roboto-Bold")format("ttf");
+}
+
+.portfolio__case {
+    max-width: 1380px;
+    margin: 0 auto 0 auto;
+    @media (max-width: 1500px) {
+        max-width: 1152px;
+    }
+    @media (max-width: 768px) {
+        max-width: 1152px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    font: {
+        family: 'Roboto', sans-serif;
+        style: normal;
+        size: 1.4rem;
+        weight: 400;
+    }
+    line-height: 1.7rem;
+    color: #000000;
+    text-align: left;
+    background-color: #FFFFFF;
+    .description-text {
+        margin-top: 5%;
+    }
+    .promo-block {
+        .promo-block__description {
+            font-weight: bold;
+            @media(max-width: 952px) {
+                max-width: 100%;
+            }
+        }
+        .promo-block__screens img,
+        .promo-block__logo img {
+            max-width: 100%;
+        }
+        .promo-block__logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .promo-block__summary {
+            margin-top: 20%;
+        }
+        .promo-block__description {
+            margin-top: 10%;
+        }
+        .promo-block__tags {
+            font-style: italic;
+            margin-top: 5%;
+            p:nth-child(even) {
+                color: #848484;
+            }
+            p:nth-child(odd) {
+                margin-top: 3%;
+                color: #000000;
+            }
+        }
+        .promo-block__screens {
+            margin-top: 15%;
+            @media (max-width: 1024px) {
+                margin-top: 4%;
+            }
+        }
+    }
+    .case-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 7%;
+        @media (max-width: 1200px) {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+    .case-col {
+        &:nth-child(1) {
+            max-width: 30%;
+        }
+        &:nth-child(2) {
+            max-width: 60%;
+        }
+        @media (max-width: 1024px) {
+            &:nth-child(1) {
+                max-width: 100%;
+            }
+            &:nth-child(2) {
+                max-width: 100%;
+            }
+        }
+    }
+    .features-block {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        .features-block__title {
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 54px;
+            color: #404040;
+            text-transform: uppercase;
+            @media (max-width: 768px) {
+                font-size: 32px;
+                line-height: 39px;
+            }
+        }
+        .features-block__dashboard_screen img {
+            max-width: 100%;
+        }
+        .features-block__dashboard_screen {
+            max-width: 40%;
+            @media (max-width: 1024px) {
+                margin-top: 5%;
+            }
+        }
+        .features-block__list {
+            max-width: 50%;
+        }
+        @media (max-width: 1024px) {
+            flex-direction: column-reverse;
+            .features-block__dashboard_screen,
+            .features-block__list {
+                max-width: 100%;
+            }
+        }
+        .features-block__store-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 10% auto 5% 3%;
+        }
+        .features-block__store-icons img {
+            max-width: 100%;
+        }
+        .app_store {
+            margin-left: 1%;
+        }
+        @media(max-width: 1400px) {
+            .features-block__store-icons {
+                margin-top: 3%;
+            }
+        }
+        @media(max-width: 1024px) {
+            .features-block__store-icons {
+                margin: 5% auto 5%;
+                justify-content: flex-start;
+            }
+        }
+        .desktop-view {
+            display: block;
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+        .mobile-view {
+            display: none;
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
+    }
+}

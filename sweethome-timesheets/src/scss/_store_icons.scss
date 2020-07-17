@@ -1,0 +1,15 @@
+.stores-block img {
+    max-width: 100%;
+}
+
+.stores-block {
+    margin: 3% auto 5% auto;
+    // margin-top: 2%;
+    justify-content: flex-end;
+    .app_store {
+        margin-right: 3%;
+    }
+    @media(max-width: 768px) {
+        justify-content: center;
+    }
+}

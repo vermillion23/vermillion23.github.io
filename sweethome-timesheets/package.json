@@ -1,0 +1,33 @@
+{
+    "name": "sweet_home_timesheets",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "start": "webpack --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "7.9.6",
+        "@babel/preset-env": "7.9.6",
+        "babel-loader": "8.1.0",
+        "css-loader": "3.5.3",
+        "html-webpack-plugin": "4.3.0",
+        "mini-css-extract-plugin": "0.9.0",
+        "node-sass": "4.14.1",
+        "sass-loader": "8.0.2",
+        "style-loader": "1.2.1",
+        "webpack": "4.43.0",
+        "webpack-cli": "3.3.11"
+    },
+    "dependencies": {
+        "bootstrap": "4.5.0",
+        "dom7": "2.1.5",
+        "reset-css": "5.0.1",
+        "ssr-window": "2.0.0",
+        "swiper": "5.3.8"
+    }
+}

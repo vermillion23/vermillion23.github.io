@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("/fonts/Montserrat-Regular")format("ttf"), url("/fonts/Montserrat-Bold")format("ttf"), url("/fonts/Montserrat-Medium.ttf")format("ttf"), url("/fonts/Montserrat-Light.ttf")format("ttf");
+}
+
+// $sizeLineHeightBase: 26px;
+// @mixin fontSize($fontSize,
+// $lineHeight: $fontSize) {
+//     font: {
+//         family: 'Montserrat', sans-serif;
+//         style: normal;
+//         weight: 400;
+//         size: $fontSize;
+//     }
+//     @if $lineHeight==auto {
+//         line-height: $sizeLineHeightBase;
+//     }
+//     @else {
+//         line-height: $lineHeight/$fontSize;
+//     }
+// }
+// .main {
+//     @include fontSize(20px,
+//     26px);
+//     // line-height: 26px;
+//     letter-spacing: 0.01em;
+//     color: #1D3089;
+// }
+// .block-title {
+//     margin-top: 10%;
+//     margin-bottom: 5%;
+//     @include fontSize(50px);
+//     // font-size: 50px;
+//     // line-height: 52px;
+//     align-items: center;
+//     text-transform: uppercase;
+//     color: #28A2D5;
+// }
+.main {
+    font: {
+        family: 'Montserrat', sans-serif;
+        style: normal;
+        weight: 400;
+        size: 20px;
+    }
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #1D3089;
+    .promo-block__text {
+        font: {
+            family: 'Montserrat', sans-serif;
+            style: normal;
+            weight: 400;
+            size: 20px;
+        }
+        line-height: 26px;
+        letter-spacing: 0.01em;
+        color: #1D3089;
+        @media (max-width: 860px) {
+            font-size: 16px;
+            line-height: 22px;
+            .block-title {
+                font-size: 30px;
+                line-height: 26px;
+            }
+        }
+    }
+    .block-title {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 50px;
+        line-height: 52px;
+        align-items: center;
+        text-transform: uppercase;
+        color: #28A2D5;
+    }
+    @media (max-width: 860px) {
+        font-size: 16px;
+        line-height: 22px;
+        .block-title {
+            font-size: 30px;
+            line-height: 26px;
+        }
+    }
+}
