@@ -11,12 +11,23 @@ module.exports = {
                 collapseWhitespace: true
             }
         }),
+        new HTMLWebpackPlugin({
+            filename: 'sweethome.html',
+            template: 'sweethome-timesheets/index.html',
+            minify: {
+                collapseWhitespace: true
+            }
+        }),
         new MiniCssExtractPlugin('main.css')
     ],
-    entry: './src/app.js',
+    entry: {
+        home: './src/app.js',
+        sweethome: './sweethome-timesheets/src/app.js',
+    },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        // path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js',
+        path: __dirname + '/dist'
     },
     devtool: 'inline-source-map',
     module: {
