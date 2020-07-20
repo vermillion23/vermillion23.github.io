@@ -1,15 +1,17 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("/src/fonts/Montserrat-Regular.ttf")format("ttf"), url("/src/fonts/Montserrat-Bold.ttf")format("ttf");
+}
+
 .main {
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-}
-
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url("fonts/Montserrat-Regular.ttf")format("ttf"), url("fonts/Montserrat-Bold.ttf")format("ttf");
-}
-
-.subtitle {
     font-style: normal;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
     font-weight: 700;
     font-size: 2rem;
     line-height: 39px;
@@ -95,16 +97,17 @@ section {
     display: none;
 }
 
-.subtitle {
+.title {
     margin-top: 38px;
 }
 
 .features-text,
 .text {
+    font-family: 'Montserrat', sans-serif;
     margin: 24px auto 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     /* font-size: 16px; */
     line-height: 1.5rem;
     color: #000000;
@@ -112,7 +115,14 @@ section {
 
 .features img {
     /* width: 116px; */
-    max-width: 51%;
+    width: 116px;
+    max-width: 118px;
+}
+
+@media (min-width: 768px) {
+    .features-section img {
+        max-width: 53%;
+    }
 }
 
 .features {
@@ -124,6 +134,11 @@ section {
 .features-buildings,
 .features-money {
     margin-top: 52px;
+    max-width: 30rem;
+}
+
+.features-map img {
+    min-height: 112px;
 }
 
 .additional {

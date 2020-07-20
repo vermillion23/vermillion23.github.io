@@ -1,2 +1,3 @@
-// import './scss/_styles_reset.scss';
 import './scss/main.scss';
+import './js/burger-icon';
+import 'bootstrap';

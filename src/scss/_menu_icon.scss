@@ -1,0 +1,111 @@
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+.menu-icon {
+    margin-top: 5%;
+    // background-color: salmon;
+    height: 22px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon-line {
+    width: 24px;
+    height: 4px;
+    // background-color: #C4C4C4;
+    background-color: #EBEBEB;
+    position: relative;
+    &:before {
+        position: absolute;
+        left: 0;
+        top: -7.5px;
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        background-color: #EBEBEB;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -webkit-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -moz-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -ms-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    &:after {
+        position: absolute;
+        left: 0;
+        top: 7.5px;
+        content: '';
+        display: block;
+        width: 24px;
+        height: 4px;
+        background-color: #EBEBEB;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -webkit-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -moz-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -ms-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        -o-transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    &.menu-icon-active {
+        background-color: transparent;
+        &:before {
+            top: 0;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -webkit-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -moz-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -ms-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        }
+        &:after {
+            top: 0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -webkit-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -moz-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -ms-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+            -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        }
+    }
+}
+
+// .menu-icon.menu-icon-active {
+//     background-color: transparent;
+//     &:before {
+//         top: 0;
+//         transform: rotate(45deg);
+//         -webkit-transform: rotate(45deg);
+//         -moz-transform: rotate(45deg);
+//         -ms-transform: rotate(45deg);
+//         -o-transform: rotate(45deg);
+//         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -webkit-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -moz-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -ms-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//     }
+//     &:after {
+//         top: 0;
+//         transform: rotate(-45deg);
+//         -webkit-transform: rotate(-45deg);
+//         -moz-transform: rotate(-45deg);
+//         -ms-transform: rotate(-45deg);
+//         -o-transform: rotate(-45deg);
+//         transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -webkit-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -moz-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -ms-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//         -o-transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+//     }
+// }

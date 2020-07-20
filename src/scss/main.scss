@@ -1,3 +1,24 @@
 // @import "styles_reset";
 @import "reset-css";
+@import "menu_icon";
+@import "menu";
 @import "~bootstrap/scss/bootstrap";
+// @import "fonts";
+html,
+body {
+    font-family: Montserrat;
+    font-style: normal;
+    // color: #ffffff;
+    // font-weight: 500;
+    // font-size: 18px;
+    // line-height: 36px;
+    // letter-spacing: 0.05em;
+    color: #010101;
+    // background: linear-gradient(180deg, rgba(233, 242, 229, 0.59) 0%, rgba(255, 255, 255, 0) 100%), #29A748;
+    // Project colors: #ffb6b9 #fae3d9 #bbded6 #8ac6d1 view more in https://colordrop.io/
+    // background-color: #bbded6;
+}
+
+.footer-custom {
+    background-color: #8ac6d1;
+}

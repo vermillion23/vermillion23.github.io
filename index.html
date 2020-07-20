@@ -5,16 +5,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="dist/home.css">
 </head>
 
 <body>
 
-    <p><a href="./portfolio/balancd/">Balancd</a></p>
-    <p><a href="./dist/sweethome.html">Sweethome</a></p>
-    <p><a href="./portfolio/ya_zdec_mari_el/">ya_zdec_mari_el</a></p>
-    <p><a href="./portfolio/vodafone/">vodafone</a></p>
-    <p><a href="./portfolio/sberbank/">sberbank</a></p>
-    <p><a href="./portfolio/greenbox/">greenbox</a></p>
+    <header class="">
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="menu-mobile-nav menu-icon">
+                    <div class="menu-icon-line"></div>
+                </div>
+            </button>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu-desktop-nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="navbar-brand" href="#">
+                                <img src="./src/img/github-brands.svg" alt="github-logo">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/vermillion23" class="nav-link">
+                    Github
+                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">
+                    Works
+                </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#contacts" class="nav-link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <div class="bg-light mt-5" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <h3 class="">
+                        About me
+                    </h3>
+                    <p>
+                        Junior front-end developer.
+                    </p>
+                    <p>
+                        <span class="badge badge-info">JavaScript</span>
+                        <span class="badge badge-info">Webpack</span>
+                        <span class="badge badge-info">flexbox</span>
+                        <span class="badge badge-info">bootstrap</span>
+                        <span class="badge badge-info">Git</span>
+                        <span class="badge badge-info">ReactJS</span>
+                        <span class="badge badge-info">NodeJS</span>
+                        <span class="badge badge-info">CSS</span>
+                        <span class="badge badge-info">SCSS</span>
+                        <span class="badge badge-info">MongoDB</span>
+                    </p>
+                    <!-- <p>
+                        <a href="https://yoshkar-ola.hh.ru/applicant/resumes/view?resume=0520a172ff07fd16ee0039ed1f68636e397066">CV</a>
+                    </p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h3 class="col-12 mt-4">
+                    Landing pages layout examples
+                </h3>
+
+                <div class="col-12 mt-3 border-bottom">
+                    <div class="media position-relative">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                <a href="./portfolio/balancd/index.html" class="stretched-link">Balancd</a>
+                            </h5>
+                            <p> Html5, CSS, Flexbox, desktop-first</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 border-bottom">
+                    <div class="media position-relative">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                <a href="./dist/sweethome.html">Sweethome</a>
+                            </h5>
+                            <p> Webpack, JS, SCSS, Bootstrap, Html5, CSS, desktop-first</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 border-bottom">
+                    <div class="media position-relative">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                <a href="./portfolio/ya_zdec_mari_el/">I am here: Mari El</a>
+                            </h5>
+                            <p>Mobile-first, Html5, SCSS, Flexbox</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 border-bottom">
+                    <div class="media position-relative">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                <a href="./portfolio/sberbank/" class="stretched-link">Sberbank</a>
+                            </h5>
+                            <p> Desktop-first, Html5, CSS, Flexbox</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 border-bottom">
+                    <div class="media position-relative">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                <a href="./portfolio/sberbank/" class="stretched-link">Greenbox</a>
+                            </h5>
+                            <p> Mobile-first, Html5, CSS, Flexbox</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3 border-bottom">
+                    <div class="media position-relative">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                <a href="./portfolio/vodafone/" class="stretched-link">Vodafone</a>
+                            </h5>
+                            <p> Desktop-first, Html5, CSS, Flexbox</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-custom" id="contacts">
+        <div class="container">
+            <div class="row d-flex justify-content-end">
+                <!-- <p class="">
+                    <span class="text-muted">
+                    <a href="#">vk</a>
+                    </span>
+                </p> -->
+                <p class="mt-2">
+                    <span class="text-muted">
+                        <a href="#">el-kucherova@yandex.ru</a>
+                     </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/dist/home.js"></script>
 
 </body>
 
